@@ -113,7 +113,7 @@ function AppRoutes() {
           <Route path="/master/user-salary" element={<ProtectedRoute element={<UserSalary />} />} />}
 
         {/* Catch-all */}
-        <Route path="*" element={<NotFound404 />} />
+        {/* <Route path="*" element={<NotFound404 />} /> */}
       </Routes>
 
       <ToastContainer
