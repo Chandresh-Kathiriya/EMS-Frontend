@@ -21,9 +21,9 @@ import { fetchLeaveData, fetchLeaveTypeData } from '../redux/actions/leaveAction
 function Leave() {
   const { permissionData } = useContext(PermissionContext);
   const token = localStorage.getItem('token');  // Get token from local storage
-  if (!token) {
-    window.location.href = '/login'; // Redirect if no token
-  }
+  // if (!token) {
+  //   window.location.href = '/login'; // Redirect if no token
+  // }
   const role = localStorage.getItem('role');
 
   const empCode = localStorage.getItem('empCode')

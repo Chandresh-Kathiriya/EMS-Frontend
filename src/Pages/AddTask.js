@@ -23,9 +23,9 @@ function AddTask() {
   const date = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
   const token = localStorage.getItem('token');
-  if (!token) {
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   window.location.href = '/login';
+  // }
 
   const userName = localStorage.getItem('userName')
   const role = localStorage.getItem('role')

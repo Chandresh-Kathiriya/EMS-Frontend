@@ -15,9 +15,9 @@ import img_small_jiyantech from '../Images/JiyanTech.png';
 function Profile() {
   const userID = localStorage.getItem('id');
   const token = localStorage.getItem('token');
-  if (!token) {
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   window.location.href = '/login';
+  // }
 
   const [role, setRole] = useState(null);
   useEffect(() => {

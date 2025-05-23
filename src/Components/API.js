@@ -3,10 +3,10 @@ import axios from 'axios';
 // Get the local IP or use localhost for development
 const getBaseUrl = () => {
   if (window.location.hostname === 'localhost') {
-    return 'http://localhost:3001';  // Local development
+    return 'https://ems-backend-server.onrender.com';  // Local development
   } else {
     // If accessing from mobile, replace `localhost` with the local machine IP address
-    return `http://${window.location.hostname}:3001`;
+    return `https://ems-backend-server.onrender.com`;
   }
 }
 

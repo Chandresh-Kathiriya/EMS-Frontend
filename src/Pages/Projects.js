@@ -41,10 +41,10 @@ function Projects() {
   const userId = localStorage.getItem('id');
 
   // Redirect to login if token is not available
-  if (!token) {
-    toast.error('You must be logged in to view this page');
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   toast.error('You must be logged in to view this page');
+  //   window.location.href = '/login';
+  // }
 
   const initialFilter = () => {
     try {

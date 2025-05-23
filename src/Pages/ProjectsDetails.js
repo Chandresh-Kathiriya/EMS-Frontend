@@ -21,9 +21,9 @@ import SelectInput from '../Components/SelectInput';
 function ProjectsDetails() {
   const { permissionData } = useContext(PermissionContext);
   const token = localStorage.getItem('token');
-  if (!token) {
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   window.location.href = '/login';
+  // }
 
   const role = localStorage.getItem('role');
 

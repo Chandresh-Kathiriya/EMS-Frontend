@@ -97,11 +97,11 @@ function Projects() {
   };
 
   useEffect(() => {
-    if (!token) {
-      toast.error('You must be logged in to view this page');
-      window.location.href = '/login';
-      return;
-    }
+    // if (!token) {
+    //   toast.error('You must be logged in to view this page');
+    //   window.location.href = '/login';
+    //   return;
+    // }
     let user = role === 'Admin' ? null : userId;
     dispatch(fetchProjectData(token, per_page, page, user, projectFilterStatus?.value));
   }, [dispatch, token, role, userId, per_page, page, projectFilterStatus]);

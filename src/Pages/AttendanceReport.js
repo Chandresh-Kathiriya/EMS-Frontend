@@ -13,10 +13,10 @@ import { ModalComponent } from '../Components/Model';
 
 function AttendanceReport() {
   const token = localStorage.getItem('token');
-  if (!token) {
-    toast.error('You must be logged in to view this page');
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   toast.error('You must be logged in to view this page');
+  //   window.location.href = '/login';
+  // }
 
   const currentMonth = new Date().getMonth() + 1;
   const formattedMonth = currentMonth.toString().padStart(2, '0');

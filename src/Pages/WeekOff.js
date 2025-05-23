@@ -19,9 +19,9 @@ import { fetchWeekOffData } from '../redux/actions/weekOffActions';
 function WeekOff() {
   const { permissionData } = useContext(PermissionContext);
   const token = localStorage.getItem('token');
-  if (!token) {
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   window.location.href = '/login';
+  // }
 
   const role = localStorage.getItem('role');
   const user = localStorage.getItem('id')

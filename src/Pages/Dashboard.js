@@ -15,9 +15,9 @@ function Dashboard() {
   const dispatch = useDispatch();
   // const { permissionData } = useContext(PermissionContext);
   const token = localStorage.getItem('token');
-  if (!token) {
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   window.location.href = '/login';
+  // }
 
   const { totalProjects, ongoingTasks, dueTodayTasks, overdueTasks, attendanceData, pendingTasksData} = useSelector(
     (state) => state.dashboard

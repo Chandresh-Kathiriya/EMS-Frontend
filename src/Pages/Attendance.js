@@ -51,10 +51,10 @@ function Attendance() {
   let user = localStorage.getItem('id');
 
   // Redirect to login if token is not available
-  if (!token) {
-    toast.error('You must be logged in to view this page');
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   toast.error('You must be logged in to view this page');
+  //   window.location.href = '/login';
+  // }
 
   const today = new Date(),
     currentDate = today.getFullYear() + '-' + ("0" + (today.getMonth() + 1)).slice(-2) + '-' + ("0" + today.getDate()).slice(-2);

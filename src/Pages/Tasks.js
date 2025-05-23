@@ -71,9 +71,9 @@ function Tasks() {
   const token = localStorage.getItem('token');
   const role = localStorage.getItem('role');
   const userId = localStorage.getItem('id');
-  if (!token) {
-    window.location.href = '/login';
-  }
+  // if (!token) {
+  //   window.location.href = '/login';
+  // }
 
   let view = localStorage.getItem('view')
   if (view === '') {

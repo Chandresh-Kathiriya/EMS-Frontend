@@ -18,9 +18,9 @@ import { fetchLeaveTypeData } from '../redux/actions/leaveTypeActions';
 function LeaveType() {
   const { permissionData } = useContext(PermissionContext);
   const token = localStorage.getItem('token');  // Get token from local storage
-  if (!token) {
-    window.location.href = '/login'; // Redirect if no token
-  }
+  // if (!token) {
+  //   window.location.href = '/login'; // Redirect if no token
+  // }
 
   const [selectedLeaveType, setSelectedLeaveType] = useState(null); // LeaveType selected for editing  
   const [showOffcanvas, setShowOffcanvas] = useState(false); // To show/hide offcanvas

@@ -19,9 +19,9 @@ import Swal from 'sweetalert2';
 function PendingLeave() {
   const userId = localStorage.getItem('id');
   const token = localStorage.getItem('token');  // Get token from local storage
-  if (!token) {
-    window.location.href = '/login'; // Redirect if no token
-  }
+  // if (!token) {
+  //   window.location.href = '/login'; // Redirect if no token
+  // }
 
   const [showFilterOffcanvas, setShowFilterOffcanvas] = useState(false);
 

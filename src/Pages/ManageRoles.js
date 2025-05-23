@@ -20,11 +20,11 @@ function ManageRoles() {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    if (!token) {
-      window.location.href = '/login';
-    } else {
-      getProjectData(token);
-    }
+    // if (!token) {
+    //   window.location.href = '/login';
+    // } else {
+    // }
+    getProjectData(token);
   }, []);
 
   // Fetch project data from the API

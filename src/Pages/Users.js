@@ -20,9 +20,9 @@ import Swal from 'sweetalert2';
 
 function Users() {
   const token = localStorage.getItem('token');
-  if (!token) {
-    window.location.href = '/login'; // Redirect if no token
-  }
+  // if (!token) {
+  //   window.location.href = '/login'; // Redirect if no token
+  // }
 
   const role = localStorage.getItem('role');
   const userId = localStorage.getItem('id');
