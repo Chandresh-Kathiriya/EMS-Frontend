@@ -15,6 +15,7 @@ export const PermissionProvider = ({ children }) => {
     }
   }, [token, dispatch, permissionData]);
 
+
   return (
     <PermissionContext.Provider value={{ permissionData, punchData, smtpData, locationMaster, loadingPermissions }}>
       {children}
